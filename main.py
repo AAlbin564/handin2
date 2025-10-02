@@ -1,50 +1,106 @@
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 import pandas as pd
-import tqdm
-
+from tqdm import tqdm
 from huggingface_hub import login
-from google.colab import userdata
+import os
+import dotenv
 
 
 
-login(token=userdata.get('HF_TOKEN'))
+# ============================================================================
+# Configuration
+# ============================================================================
 
-# Load the model
-model_name = "microsoft/phi-2"  # this is just an example, make your own choice on the model.
-# Note that different models may have different ways to initialize, adapt by yourself.
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    dtype="auto",
-    device_map="cuda:0"  # specify the model hosting on GPU
-)
+MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"
+SAMPLE_SIZE = 50
+RANDOM_SEED = 42
+
+# ============================================================================
+# Model Setup
+# ============================================================================
+
+def setup_model(model_name):
+    """Load tokenizer and model."""
+    print(f"Loading model: {model_name}")
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        dtype="auto",
+        device_map="cpu"
+    )
+    return tokenizer, model
+
+# ============================================================================
+# Dataset Loading
+# ============================================================================
+
+def load_decodingtrust_datasets():
+    """Load DecodingTrust benchmark datasets."""
+    print("Loading DecodingTrust datasets...")
+    toxicityDataset = load_dataset("AI-Secure/DecodingTrust", "toxicity")  # choose your own subsets (at least 3)
+    stereotypeDataset = load_dataset("AI-Secure/DecodingTrust", "stereotype")  # choose your own subsets (at least 3
+    privacyDataset = load_dataset("AI-Secure/DecodingTrust", "privacy")  # choose your own subsets (at least 3
 
 
-model
+    
+    
+    return privacyDataset, toxicityDataset , stereotypeDataset
 
+def sample_datasets(toxicityDataset, stereotypeDataset, privacyDataset, 
+                    sample_size=50, seed=42):
+    """Sample random subsets from datasets."""
+    # Extract specific splits
+    stereotypeSplit = stereotypeDataset["stereotype"]
+    toxicSplit = toxicityDataset["toxic.gpt4"]
+    privacySplit = privacyDataset["enron.five_shot"]
 
-# The following codes illustrate how to use the model to generate content based on given inputs.
-# NOTE that different model has different way of generating responses, adapt by yourself
-prompt = "Hello, how are you?"
-formatted_prompt = f"Instruct: {prompt}\nOutput:"
-inputs = tokenizer(formatted_prompt, return_tensors="pt").to(model.device)
-output_ids = model.generate(
-    **inputs,
-    max_length=200,
-    do_sample=True,
-    temperature=0.7,
-    # add/reduce parameters upon your desire
-)
-output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-print(output_text)
+    
+    # Random sampling
+    toxicGpt4SplitSubRandom = toxicSplit.shuffle(seed=42).select(range(50))
+    stereotypeSplitSubRandom = stereotypeSplit.shuffle(seed=42).select(range(50))
+    privacySplitSubRandom = privacySplit.shuffle(seed=42).select(range(50))
 
+    # sampled text
+    toxicityPromptsRandom = [item['text'] for item in toxicGpt4SplitSubRandom['prompt']]
+    print("Randomly sampled prompts:")
+    print(toxicityPromptsRandom)
 
-# Extract only the answer after "Output:"
-output_text.split("Output:", 1)[-1].strip()
+    stereotypeRandomPrompts = [item["text"] for item in stereotypeSplitSubRandom["prompt"]]
+    print("Randomly sampled stereotype prompts:")
+    print(stereotypeRandomPrompts)
 
+    privacyRandomPrompts = [item for item in privacySplitSubRandom["prompt"]]
+    print("Randomly sampled privacy prompts:")
+    print(privacyRandomPrompts)
+    
+    return toxicityPromptsRandom, stereotypeRandomPrompts, privacyRandomPrompts
+def create_splits(toxicityDataset, stereotypeDataset, privacyDataset, 
+                    sample_size=50, seed=42):
+    stereotypeSplit = stereotypeDataset["stereotype"]
+    toxicSplit = toxicityDataset["toxic.gpt4"]
+    privacySplit = privacyDataset["enron.five_shot"]
+    return toxicSplit, stereotypeSplit, privacySplit
+def balanced_sampling(toxicSplit, stereotypeSplit, privacySplit):
+    toxicGpt4DF = toxicSplit.to_pandas()
+    stereotypeDF = stereotypeSplit.to_pandas()
+    privacyDF = privacySplit.to_pandas()
 
-# Load the Toxicity subset of the DecodingTrust dataset
-dataset = load_dataset("AI-Secure/DecodingTrust", "toxicity")  # choose your own subsets (at least 3)
-dataset  # check the structure and info of this dataset
+    toxicGpt4DF['toxicity_score'] = toxicGpt4DF['prompt'].apply(lambda x: x['toxicity'])
+    stereotypeDF["sys_prompt_type_tag"] = stereotypeDF["prompt"].apply(lambda x: x["sys_prompt_type_tag"])
+
+    return toxicGpt4DF, stereotypeDF, privacyDF
+
+def main():
+    dotenv.load_dotenv()
+    login(token=os.getenv("HF_TOKEN"))
+    modelDetails = setup_model(MODEL_NAME)
+    print("model setup works")
+    datasets = load_decodingtrust_datasets()
+    print("datasets loaded")
+    splits = create_splits(datasets[1], datasets[2], datasets[0])
+    print(balanced_sampling(*splits))
+
+if __name__ == "__main__":
+    main()
