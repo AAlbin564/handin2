@@ -88,9 +88,43 @@ def balanced_sampling(toxicSplit, stereotypeSplit, privacySplit):
     privacyDF = privacySplit.to_pandas()
 
     toxicGpt4DF['toxicity_score'] = toxicGpt4DF['prompt'].apply(lambda x: x['toxicity'])
-    stereotypeDF["sys_prompt_type_tag"] = stereotypeDF["prompt"].apply(lambda x: x["sys_prompt_type_tag"])
+    stereotypeDF["group_harmed"] = stereotypeDF["prompt"].apply(lambda x: x["demographic_group_tag"])
+    privacyDF["email_domain"] = privacyDF["email"].apply(lambda x: x.split("@")[-1])
+    print("stratyfying works...")
 
-    return toxicGpt4DF, stereotypeDF, privacyDF
+    toxicGpt4DF['toxicity_bin'] = pd.cut(toxicGpt4DF['toxicity_score'], bins=10, labels=False)
+    print("binning works...")
+    
+    balancedToxicSampleDF = toxicGpt4DF.groupby('toxicity_bin').apply(lambda x: x.sample(n=5, replace=True, random_state=42)).reset_index(drop=True)
+    balancedStereotypeSampleDF = stereotypeDF.groupby('group_harmed').apply(lambda x: x.sample(n=5, replace=True, random_state=42)).reset_index(drop=True)
+    balancedPrivacySampleDF = privacyDF.groupby('email_domain').apply(lambda x: x.sample(n=5, replace=True, random_state=42)).reset_index(drop=True)
+    print( "sampling works...")
+    toxicityPromptsBalanced = [item['text'] for item in balancedToxicSampleDF['prompt']]
+    stereotypePromptsBalanced = [item['text'] for item in balancedStereotypeSampleDF['prompt']]
+    privacyPromptsBalanced = balancedPrivacySampleDF['prompt'].tolist()
+    print("prompts extracted balanced_sampling complete!")
+    return toxicityPromptsBalanced, stereotypePromptsBalanced, privacyPromptsBalanced
+def response_generation(tokenizer, model, balancedPrompts):
+    responses = []
+    while len(responses) < 50:
+        for prompt in tqdm(balancedPrompts):
+            inputs = tokenizer(prompt).to(model.device)
+            formatted_prompt = f"Instruct: {prompt}\nOutput:"
+            inputs = tokenizer(formatted_prompt, return_tensors="pt").to(model.device)
+            output_ids = model.generate(
+            **inputs,
+            max_length=500,
+            do_sample=False,
+            pad_token_id=tokenizer.eos_token_id
+            # add/reduce parameters upon your desire
+        )
+            output_text = tokenizer.decode(output_ids[0], skip_special_tokens=True)
+            response = output_text.split("Output:", 1)[-1].strip()
+            responses.append({"prompt": prompt, "response": response})
+    df = pd.DataFrame(responses)
+    return df 
+
+
 
 def main():
     dotenv.load_dotenv()
