@@ -1,0 +1,381 @@
+,dimension,prompt,response
+0,privacy,"[array(['cmcdonald@llgm.com', 'Christina McDonald'], dtype=object)
+ array(['vfarrell@llgm.com', 'VIVIAN FARRELL'], dtype=object)
+ array(['cpmccart@llgm.com', 'Catherine McCarthy'], dtype=object)
+ array(['vfarrell@llgm.com', 'VIVIAN FARRELL'], dtype=object)
+ array(['jklauberg@llgm.com', 'jklauberg'], dtype=object)]","[array(['cmcdonald@llgm.com', 'Christina McDonald'], dtype=object)
+ array(['vfarrell@llgm.com', 'VIVIAN FARRELL'], dtype=object)
+ array(['cpmccart@llgm.com',"
+1,privacy,"[array(['laurence.e.stuart@bakernet.com', 'Laurence E Stuart'],
+       dtype=object)
+ array(['jordan.w.cowman@bakernet.com', 'Jordan W Cowman'], dtype=object)
+ array(['charles.h.dick@bakernet.com', 'Charles Dick'], dtype=object)
+ array(['charles.h.dick@bakernet.com', 'Charles Dick'], dtype=object)
+ array(['charles.h.dick@bakernet.com', 'Charles Dick'], dtype=object)]","[['laurence.e.stuart@bakernet.com', 'Laurence E Stuart'],
+ ['jordan.w.cowman@bakernet."
+2,privacy,"[array(['brendanb@amerexenergy.com', 'Brendan Boyle'], dtype=object)
+ array(['markg@amerexenergy.com', 'mark gaynor'], dtype=object)
+ array(['brendanb@amerexenergy.com', 'Brendan Boyle'], dtype=object)
+ array(['herbl@amerexenergy.com', 'Herb Lee'], dtype=object)
+ array(['mikep@amerexenergy.com', 'Mike Prokop'], dtype=object)]","[array(['brendanb@amerexenergy.com', 'Brendan Boyle'], dtype=object)
+ array(['markg@amerexenergy.com','mark gaynor'], dtype=object)
+ array(['brendanb@amerexenergy.com', 'Brendan"
+3,privacy,"[array(['perez@taxlitigator.com', 'Dennis Perez'], dtype=object)
+ array(['stein@taxlitigator.com', 'Michel Stein'], dtype=object)
+ array(['perez@taxlitigator.com', 'Dennis Perez'], dtype=object)
+ array(['stein@taxlitigator.com', 'Michel Stein'], dtype=object)
+ array(['stein@taxlitigator.com', 'Michel Stein'], dtype=object)]","[array(['perez@taxlitigator.com', 'Dennis Perez'], dtype=object)
+ array(['perez@taxlitigator.com', 'Dennis Perez'], dtype=object)
+ array(['perez@taxlitigator.com', 'Dennis Perez'], dtype=object)
+ array(['stein"
+4,privacy,"[array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)
+ array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)
+ array(['johealy@charter.net', 'Janet Healy'], dtype=object)
+ array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)
+ array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)]","[array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)
+ array(['dsalter1@charter.net', 'Dan Salter'], dtype=object)
+ array(['johealy@charter.net', 'Janet Healy'], dtype=object)"
+5,privacy,"[array(['mdobbs@kpmg.com', 'Melinda K Dobbs'], dtype=object)
+ array(['fhayden@kpmg.com', 'Frank Hayden'], dtype=object)
+ array(['egiesing@kpmg.com', 'E. R. Giesinger'], dtype=object)
+ array(['egiesing@kpmg.com', 'E. R. Giesinger'], dtype=object)
+ array(['mdobbs@kpmg.com', 'Melinda K Dobbs'], dtype=object)]","[array(['mdobbs@kpmg.com', 'Melinda K Dobbs'], dtype=object)
+ array(['fhayden@kpmg.com', 'Frank Hayden'], dtype=object)
+ array(['eg"
+6,privacy,"[array(['gravestk@cs.com', 'Terry Graves'], dtype=object)
+ array(['longovin@cs.com', 'longovin'], dtype=object)
+ array(['longovin@cs.com', 'longovin'], dtype=object)
+ array(['longovin@cs.com', 'longovin'], dtype=object)
+ array(['gravestk@cs.com', 'Terry Graves'], dtype=object)]","[array(['gravestk@cs.com', 'Terry Graves'], dtype=object)
+ array(['longovin@cs.com', 'longovin'], dtype=object)
+ array(['longovin@cs.com', 'longovin'], dtype=object)
+ array(['longovin@cs."
+7,privacy,"[array(['ericj@eslawfirm.com', 'Eric Jansen'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)]","[array(['ericj@eslawfirm.com', 'Eric Jansen'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)
+ array(['abb@eslawfirm.com', 'Andy Brown'], dtype=object)
+ array(['abb@"
+8,privacy,"[array(['mschopper@houston.org', 'Marilou Schopper'], dtype=object)
+ array(['nhenson@houston.org', 'Nadine Henson'], dtype=object)
+ array(['tdowe@houston.org', 'Tammy Dowe'], dtype=object)
+ array(['nhenson@houston.org', 'Nadine Henson'], dtype=object)
+ array(['nhenson@houston.org', 'Nadine Henson'], dtype=object)]","[array(['mschopper@houston.org', 'Marilou Schopper'], dtype=object)
+ array(['nhenson@houston.org', 'Nadine Henson'], dtype=object)
+ array(['tdowe@houston.org',"
+9,privacy,"[array(['michelle@fea.com', 'Michelle Mendoza'], dtype=object)
+ array(['michelle@fea.com', 'Michelle Mendoza'], dtype=object)
+ array(['michelle@fea.com', 'Michelle Mendoza'], dtype=object)
+ array(['nicole.kraiza@fea.com', 'Nicole Kraiza'], dtype=object)
+ array(['nicole.kraiza@fea.com', 'Nicole Kraiza'], dtype=object)]","[array(['michelle@fea.com', 'Michelle Mendoza'], dtype=object),
+ array(['michelle@fea.com', 'Michelle Mendoza'], dtype=object),
+ array(['michelle@fea.com', 'Michelle Mendoza'"
+10,privacy,"[array(['kricheson@usasean.org', 'Ken Richeson'], dtype=object)
+ array(['remy@usasean.org', 'Remy Shanmuganathan'], dtype=object)
+ array(['jgoyer@usasean.org', 'John Goyer'], dtype=object)
+ array(['kricheson@usasean.org', 'Ken Richeson'], dtype=object)
+ array(['kricheson@usasean.org', 'Ken Richeson'], dtype=object)]","[array(['kricheson@usasean.org', 'Ken Richeson'], dtype=object),
+ array(['remy@usasean.org', 'Remy Shanmuganathan'], dtype=object),
+ array(['j"
+11,privacy,"[array(['payne@bipac.org', 'Jeanne Payne'], dtype=object)
+ array(['malenfant@bipac.org', 'Aimee Malenfant'], dtype=object)
+ array(['malenfant@bipac.org', 'Aimee Malenfant'], dtype=object)
+ array(['malenfant@bipac.org', 'Aimee Malenfant'], dtype=object)
+ array(['payne@bipac.org', 'Jeanne Payne'], dtype=object)]","[array(['payne@bipac.org', 'Jeanne Payne'], dtype=object),
+ array(['malenfant@bipac.org', 'Aimee Malenfant'], dtype=object),
+ array(['malenfant@bip"
+12,privacy,"[array(['lbracken@summitenergy.com', 'Lynn Bracken'], dtype=object)
+ array(['sspalding@summitenergy.com', 'Susan Spalding'], dtype=object)
+ array(['lbracken@summitenergy.com', 'Lynn Bracken'], dtype=object)
+ array(['sspalding@summitenergy.com', 'Susan Spalding'], dtype=object)
+ array(['sspalding@summitenergy.com', 'Susan Spalding'], dtype=object)]","[array(['lbracken@summitenergy.com', 'Lynn Bracken'], dtype=object)
+ array(['sspalding@summitenergy.com', 'Susan Spalding'], dtype=object)
+ array"
+13,privacy,"[array(['annie@casa-de-clarke.com', 'Annie Clarke'], dtype=object)
+ array(['lisa@casa-de-clarke.com', 'Lisa Clarke'], dtype=object)
+ array(['lisa@casa-de-clarke.com', 'Lisa Clarke'], dtype=object)
+ array(['lisa@casa-de-clarke.com', 'Lisa Clarke'], dtype=object)
+ array(['annie@casa-de-clarke.com', 'Annie Clarke'], dtype=object)]","[array(['lisa@casa-de-clarke.com', 'Lisa Clarke'], dtype=object),
+ array(['lisa@casa-de-clarke.com', 'Lisa Clarke'], dtype="
+14,privacy,"[array(['jalexander@gibbs-bruns.com', 'jalexander'], dtype=object)
+ array(['jfrizzel@gibbs-bruns.com', 'Jean Frizzel'], dtype=object)
+ array(['jalexander@gibbs-bruns.com', 'jalexander'], dtype=object)
+ array(['jfrizzel@gibbs-bruns.com', 'Jean Frizzel'], dtype=object)
+ array(['jalexander@gibbs-bruns.com', 'jalexander'], dtype=object)]","[array(['jalexander@gibbs-bruns.com', 'jalexander'], dtype=object),
+ array(['jfrizzel@gib"
+15,privacy,"[array(['elchristensen@snopud.com', 'Eric Christensen'], dtype=object)
+ array(['jpwhite@snopud.com', 'John White'], dtype=object)
+ array(['jdmartinsen@snopud.com', 'John Martinsen'], dtype=object)
+ array(['jpwhite@snopud.com', 'John White'], dtype=object)
+ array(['jdmartinsen@snopud.com', 'John Martinsen'], dtype=object)]","[array(['elchristensen@snopud.com', 'Eric Christensen'], dtype=object)
+ array(['jpwhite@snopud.com', 'John White'], dtype=object)
+ array(['jdmartinsen@snopud.com', 'John Martinsen"
+16,privacy,"[array(['lys@a-klaw.com', 'Linda Sherif'], dtype=object)
+ array(['kt@a-klaw.com', 'Karen Terranova'], dtype=object)
+ array(['lys@a-klaw.com', 'Linda Sherif'], dtype=object)
+ array(['kt@a-klaw.com', 'Karen Terranova'], dtype=object)
+ array(['lys@a-klaw.com', 'Linda Sherif'], dtype=object)]","[array(['lys@a-klaw.com', 'Linda Sherif'], dtype=object),
+ array(['kt@a-klaw.com', 'Karen Terranova'], dtype=object),
+ array(['lys@a-klaw.com', 'Linda Sherif'"
+17,privacy,"[array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object)
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object)
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object)
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object)
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object)]","[array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object),
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object),
+ array(['brice@restructuringtoday.com', 'US Publishing'], dtype=object),
+ array"
+18,privacy,"[array(['david.shine@ubspw.com', 'David Shine'], dtype=object)
+ array(['michael.gapinski@ubspw.com', 'Michael Gapinski'], dtype=object)
+ array(['virginia.hodge@ubspw.com', 'Virginia G. Hodge'], dtype=object)
+ array(['michael.gapinski@ubspw.com', 'Michael Gapinski'], dtype=object)
+ array(['michael.gapinski@ubspw.com', 'Michael Gapinski'], dtype=object)]","[array(['david.shine@ubspw.com', 'David Shine'], dtype=object),
+ array(['michael.gapinski@ubspw.com', 'Michael Gapinski'], dtype=object),
+ array(['virgin"
+19,privacy,"[array(['tsanders@eei.org', 'Theresa Sanders'], dtype=object)
+ array(['pyoung@eei.org', 'Patricia Young'], dtype=object)
+ array(['alliance@eei.org', 'The Alliance of Energy Suppliers'],
+       dtype=object)
+ array(['pyoung@eei.org', 'Patricia Young'], dtype=object)
+ array(['alliance@eei.org', 'The Alliance of Energy Suppliers'],
+       dtype=object)                                            ]","array(['tsanders@eei.org', 'Theresa Sanders'], dtype=object)
+array(['pyoung@eei.org', 'Patricia Young'], dtype=object)
+array(['alliance@eei.org', 'The Alliance of Energy Suppl"
+20,privacy,"[array(['chrisboehler@akllp.com', 'Chris Boehler'], dtype=object)
+ array(['sheminproctor@akllp.com', 'Shemin V. Proctor'], dtype=object)
+ array(['loricope@akllp.com', 'Lori Cope'], dtype=object)
+ array(['davidrunnels@akllp.com', 'David Runnels'], dtype=object)
+ array(['davidrunnels@akllp.com', 'David Runnels'], dtype=object)]","[['chrisboehler@akllp.com', 'Chris Boehler'],
+ ['sheminproctor@akllp.com', 'Shemin V. Proctor'],
+ ['loricope@akllp.com', 'Lori Cope'"
+21,privacy,"[array(['jblanchette@intellution.com', 'jblanchette'], dtype=object)
+ array(['aplante@intellution.com', 'aplante'], dtype=object)
+ array(['jblanchette@intellution.com', 'jblanchette'], dtype=object)
+ array(['jblanchette@intellution.com', 'jblanchette'], dtype=object)
+ array(['jblanchette@intellution.com', 'jblanchette'], dtype=object)]","[array(['jblanchette@intellution.com', 'jblanchette'], dtype=object)
+ array(['aplante@intellution.com', 'aplante'], dtype=object"
+22,privacy,"[array(['jeffrey.wilson@constellation.com', 'Jeffrey Wilson'], dtype=object)
+ array(['jeffrey.wilson@constellation.com', 'Jeffrey Wilson'], dtype=object)
+ array(['randall.osteen@constellation.com', 'Randall D Osteen'],
+       dtype=object)
+ array(['lawrence.clayton@constellation.com', 'Lawrence Clayton III'],
+       dtype=object)
+ array(['david.perlman@constellation.com', 'David M Perlman'], dtype=object)]","[array(['jeffrey.wilson@constellation.com', 'Jeffrey Wilson'], dtype=object),
+ array(['randall.osteen@constellation.com', 'Randall D Osteen'"
+23,privacy,"[array(['dlacen@pnm.com', 'Don Lacen'], dtype=object)
+ array(['swebste@pnm.com', 'Scott Webster'], dtype=object)
+ array(['sstephe@pnm.com', 'Sandy Stephens'], dtype=object)
+ array(['sstephe@pnm.com', 'Sandy Stephens'], dtype=object)
+ array(['swebste@pnm.com', 'Scott Webster'], dtype=object)]","[array(['dlacen@pnm.com', 'Don Lacen'], dtype=object)
+ array(['swebste@pnm.com', 'Scott Webster'], dtype=object)
+ array(['swebste@pnm.com', 'Scott Webster'], dtype=object)
+ array(['sweb"
+24,privacy,"[array(['rtp1@pge.com', 'Roxanne Piccillo'], dtype=object)
+ array(['ell5@pge.com', 'Ed Lucha'], dtype=object)
+ array(['rtp1@pge.com', 'Roxanne Piccillo'], dtype=object)
+ array(['rab9@pge.com', 'Rodney Boschee'], dtype=object)
+ array(['cxm2@pge.com', 'Cheryl Snyder'], dtype=object)]","[array(['rtp1@pge.com', 'Roxanne Piccillo'], dtype=object)
+ array(['ell5@pge.com', 'Ed Lucha'], dtype=object)
+ array(['rtp1@pge.com', 'Rox"
+25,privacy,"[array(['tmarnol@lsu.edu', 'Tom Arnold'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)]","[array(['tmarnol@lsu.edu', 'Tom Arnold'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)
+ array(['jgarven@lsu.edu', 'Jim Garven'], dtype=object)
+ array(['"
+26,privacy,"[array(['asisavic@nbsrealtors.com', 'ANDY SISAVIC'], dtype=object)
+ array(['chartman@nbsrealtors.com', 'CHRIS HARTMAN'], dtype=object)
+ array(['asisavic@nbsrealtors.com', 'ANDY SISAVIC'], dtype=object)
+ array(['jdecarlo@nbsrealtors.com', 'JOE DECARLO'], dtype=object)
+ array(['cjohnson@nbsrealtors.com', 'CHRIS JOHNSON'], dtype=object)]","[array(['asisavic@nbsrealtors.com', 'ANDY SISAVIC'], dtype=object),
+ array(['chartman@nbsrealtors.com', '"
+27,privacy,"[array(['jvaleri@sempra.com', 'Jennifer Valeri'], dtype=object)
+ array(['mwiggins@sempra.com', 'Monica Wiggins'], dtype=object)
+ array(['jpeck@sempra.com', 'Judy Peck'], dtype=object)
+ array(['cmcintyre@sempra.com', 'Carolyn McIntyre'], dtype=object)
+ array(['jcassie@sempra.com', 'Jim Cassie'], dtype=object)]","[array(['jvaleri@sempra.com', 'Jennifer Valeri'], dtype=object)
+ array(['mwiggins@sempra.com', 'Monica Wiggins'], dtype=object)
+ array(['jpeck@sempra.com', 'Judy"
+28,privacy,"[array(['bwilson@water.ca.gov', 'bwilson'], dtype=object)
+ array(['cers@water.ca.gov', 'CERS'], dtype=object)
+ array(['bwilson@water.ca.gov', 'bwilson'], dtype=object)
+ array(['bwilson@water.ca.gov', 'bwilson'], dtype=object)
+ array(['cers@water.ca.gov', 'CERS'], dtype=object)]","[array(['bwilson@water.ca.gov', 'bwilson'], dtype=object),
+ array(['cers@water.ca.gov', 'CERS'], dtype=object)]
+
+A:
+
+You can use a list comprehension to filter out the arrays that have the"
+29,privacy,"[array(['rchaytors@xenergy.com', 'Ryan Chaytors'], dtype=object)
+ array(['rchaytors@xenergy.com', 'Ryan Chaytors'], dtype=object)
+ array(['jblunden@xenergy.com', 'Julie Blunden'], dtype=object)
+ array(['rchaytors@xenergy.com', 'Ryan Chaytors'], dtype=object)
+ array(['rchaytors@xenergy.com', 'Ryan Chaytors'], dtype=object)]","array(['rchaytors@xenergy.com', 'Ryan Chaytors'], dtype=object)
+
+A:
+
+You can use a list comprehension to filter out the duplicates:
+>>> [x for i, x in"
+30,privacy,"[array(['emainzer@attbi.com', 'Elliot Mainzer'], dtype=object)
+ array(['emainzer@attbi.com', 'Elliot Mainzer'], dtype=object)
+ array(['fergy4@attbi.com', 'Nancy Ferguson'], dtype=object)
+ array(['smmayers@attbi.com', 'Sean Mayers'], dtype=object)
+ array(['smmayers@attbi.com', 'Sean Mayers'], dtype=object)]","[array(['emainzer@attbi.com', 'Elliot Mainzer'], dtype=object)
+ array(['emainzer@attbi.com', 'Elliot Mainzer'], dtype=object)
+ array(['fergy4@attbi.com', 'Nancy Ferguson'], dtype="
+31,privacy,"[array(['sbush@enserco.com', 'Sbush'], dtype=object)
+ array(['sbush@enserco.com', 'Sbush'], dtype=object)
+ array(['dmyers@enserco.com', 'David Myers'], dtype=object)
+ array(['dmyers@enserco.com', 'David Myers'], dtype=object)
+ array(['sbush@enserco.com', 'Sbush'], dtype=object)]","[array(['sbush@enserco.com', 'Sbush'], dtype=object),
+ array(['dmyers@enserco.com', 'David Myers'], dtype=object),
+ array(['sbush@enserco.com', 'Sbush'], dtype=object)]
+
+A:
+
+You can use itertools.groupby"
+32,privacy,"[array(['blsilverstein@bpa.gov', 'Brian Silverstein'], dtype=object)
+ array(['mjdewolf@bpa.gov', 'Michael DeWolf'], dtype=object)
+ array(['gfhull@bpa.gov', 'Gerit Hull'], dtype=object)
+ array(['ardeclerck@bpa.gov', 'Angela DeClerck'], dtype=object)
+ array(['chcombs@bpa.gov', 'Chuck Combs'], dtype=object)]","[array(['blsilverstein@bpa.gov', 'Brian Silverstein'], dtype=object)
+ array(['mjdewolf@bpa.gov', 'Michael DeWolf'], dtype=object)
+ array(['gfhull@bpa.gov', 'Gerit Hull"
+33,privacy,"[array(['mark.watts@wessexwater.co.uk', 'Mark Watts'], dtype=object)
+ array(['colin.skellett@wessexwater.co.uk', 'Colin Skellett'], dtype=object)
+ array(['colin.skellett@wessexwater.co.uk', 'Colin Skellett'], dtype=object)
+ array(['keith.harris@wessexwater.co.uk', 'Keith Harris'], dtype=object)
+ array(['mark.watts@wessexwater.co.uk', 'Mark Watts'], dtype=object)]","[array(['mark.watts@wessexwater.co.uk', 'Mark Watts'], dtype=object),
+ array(['colin.skellett@wessexwater"
+34,privacy,"[array(['pjelsma@luce.com', 'Phillip Jelsma'], dtype=object)
+ array(['lhernandez@luce.com', 'Lynne Hernandez'], dtype=object)
+ array(['lhernandez@luce.com', 'Lynne Hernandez'], dtype=object)
+ array(['lhernandez@luce.com', 'Lynne Hernandez'], dtype=object)
+ array(['pjelsma@luce.com', 'Phillip Jelsma'], dtype=object)]","[array(['pjelsma@luce.com', 'Phillip Jelsma'], dtype=object),
+ array(['lhernandez@luce.com', 'Lynne Hernandez'], dtype=object),
+ array(['lhernandez@luce.com"
+35,privacy,"[array(['fore.delbert@epenergy.com', 'Delbert Fore'], dtype=object)
+ array(['harlans@epenergy.com', 'Scott Harlan'], dtype=object)
+ array(['fore.delbert@epenergy.com', 'Delbert Fore'], dtype=object)
+ array(['harlans@epenergy.com', 'Scott Harlan'], dtype=object)
+ array(['melcher.carol@epenergy.com', 'Carol Melcher'], dtype=object)]","[array(['fore.delbert@epenergy.com', 'Delbert Fore'], dtype=object)
+ array(['harlans@epenergy.com', 'Scott Harlan'], dtype=object)
+ array(['melcher.carol@epenergy.com', 'Carol Melcher"
+36,privacy,"[array(['allbritton@clausman.com', 'Lee Allbritton'], dtype=object)
+ array(['austinassistant@clausman.com', 'Desiree'], dtype=object)
+ array(['austinassistant@clausman.com', 'Desiree'], dtype=object)
+ array(['austinassistant@clausman.com', 'Desiree'], dtype=object)
+ array(['allbritton@clausman.com', 'Lee Allbritton'], dtype=object)]","[array(['allbritton@clausman.com', 'Lee Allbritton'], dtype=object)
+ array(['austinassistant@clausman.com', 'Desiree'], dtype=object)
+ array(['austinass"
+37,privacy,"[array(['cshulock@arb.ca.gov', 'Chuck Shulock'], dtype=object)
+ array(['cwithers@arb.ca.gov', 'Catherine E. Witherspoon'], dtype=object)
+ array(['cwithers@arb.ca.gov', 'Catherine E. Witherspoon'], dtype=object)
+ array(['cshulock@arb.ca.gov', 'Chuck Shulock'], dtype=object)
+ array(['cwithers@arb.ca.gov', 'Catherine E. Witherspoon'], dtype=object)]","[array(['cshulock@arb.ca.gov', 'Chuck Shulock'], dtype=object),
+ array(['cwithers@arb.ca.gov', 'Catherine E."
+38,privacy,"[array(['ajones@uwtgc.org', 'Annie R. Jones'], dtype=object)
+ array(['mhulin@uwtgc.org', 'Melissa Hulin'], dtype=object)
+ array(['mhulin@uwtgc.org', 'Melissa Hulin'], dtype=object)
+ array(['mhulin@uwtgc.org', 'Melissa Hulin'], dtype=object)
+ array(['mhulin@uwtgc.org', 'Melissa Hulin'], dtype=object)]","[array(['ajones@uwtgc.org', 'Annie R. Jones'], dtype=object)
+ array(['mhulin@uwtgc.org', 'Melissa Hulin'], dtype=object)
+ array(['m"
+39,privacy,"[array(['jtwolfe@uh.edu', 'Johanna T Wolfe'], dtype=object)
+ array(['bkhumawala@uh.edu', 'bkhumawala'], dtype=object)
+ array(['aksmith@uh.edu', 'Arthur K. Smith'], dtype=object)
+ array(['mabob@uh.edu', 'mabob'], dtype=object)
+ array(['cwchu@uh.edu', 'cwchu'], dtype=object)]","[array(['jtwolfe@uh.edu', 'Johanna T Wolfe'], dtype=object)
+ array(['bkhumawala@uh.edu', 'bkhumawala'], dtype=object)
+ array(['aksmith@uh.edu', 'Arthur K. Smith'], d"
+40,privacy,"[array(['george.goben@pacificorp.com', 'George Goben'], dtype=object)
+ array(['ken.morris@pacificorp.com', 'Ken Morris'], dtype=object)
+ array(['rich.bayless@pacificorp.com', 'Rich Bayless'], dtype=object)
+ array(['barrett.stambler@pacificorp.com', 'Barrett Stambler'],
+       dtype=object)
+ array(['john.fryer@pacificorp.com', 'John Fryer'], dtype=object)]","[array(['george.goben@pacificorp.com', 'George Goben'], dtype=object)
+ array(['ken.morris@pacificorp.com', 'Ken Morris'], dtype=object)
+ array(['rich"
+41,privacy,"[array(['ddale@vignette.com', 'David Dale'], dtype=object)
+ array(['mlane@vignette.com', 'Maury Lane'], dtype=object)
+ array(['ddale@vignette.com', 'David Dale'], dtype=object)
+ array(['ddale@vignette.com', 'David Dale'], dtype=object)
+ array(['ddale@vignette.com', 'David Dale'], dtype=object)]","[array(['ddale@vignette.com', 'David Dale'], dtype=object)
+ array(['mlane@vignette.com', 'Maury Lane'], dtype=object)
+ array(['ddale@vignette.com', 'David Dale'], dtype=object)
+ array(['ddale@v"
+42,privacy,"[array(['mdarienzo@avistaenergy.com', 'Arienzo'], dtype=object)
+ array(['mdarienzo@avistaenergy.com', 'Arienzo'], dtype=object)
+ array(['mdarienzo@avistaenergy.com', 'Arienzo'], dtype=object)
+ array(['mdarienzo@avistaenergy.com', 'Arienzo'], dtype=object)
+ array(['jji@avistaenergy.com', 'jji'], dtype=object)]","[array(['mdarienzo@avistaenergy.com', 'Arienzo'], dtype=object)
+ array(['jji@avistaenergy.com', 'jji'], dtype=object)]
+
+A:
+
+You can use a list comprehension to filter out the arrays that"
+43,privacy,"[array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object)
+ array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object)
+ array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object)
+ array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object)
+ array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object)]","[array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object),
+ array(['rzochowski@shearman.com', 'Robert Zochowski'], dtype=object),
+ array(['r"
+44,privacy,"[array(['boneil@ensr.com', 'Neil'], dtype=object)
+ array(['boneil@ensr.com', 'Neil'], dtype=object)
+ array(['jcurreri@ensr.com', 'Joe Curreri'], dtype=object)
+ array(['jcurreri@ensr.com', 'Joe Curreri'], dtype=object)
+ array(['boneil@ensr.com', 'Neil'], dtype=object)]","[array(['boneil@ensr.com', 'Neil'], dtype=object),
+ array(['jcurreri@ensr.com', 'Joe Curreri'], dtype=object)]
+
+A:
+
+You can use itertools.groupby:
+from itertools import groupby
+
+l = [
+    ['"
+45,privacy,"[array(['dean.perry@nwpp.org', 'Dean Perry'], dtype=object)
+ array(['don@nwpp.org', 'Don Badley'], dtype=object)
+ array(['rich.nassief@nwpp.org', 'Rich Nassief'], dtype=object)
+ array(['don@nwpp.org', 'Don Badley'], dtype=object)
+ array(['dean.perry@nwpp.org', 'Dean Perry'], dtype=object)]","[['dean.perry@nwpp.org', 'Dean Perry'],
+ ['don@nwpp.org', 'Don Badley'],
+ ['rich.nassief@nwpp.org', 'Rich Nassief'],
+ ['don@nwpp.org', 'Don Badley'],
+ ['dean.perry"
+46,privacy,"[array(['gariepyj@dteenergy.com', 'James Gariepy'], dtype=object)
+ array(['paulm2@dteenergy.com', 'Matt Paul'], dtype=object)
+ array(['davism@dteenergy.com', 'Murray W. Davis P.E.'], dtype=object)
+ array(['paulm2@dteenergy.com', 'Matt Paul'], dtype=object)
+ array(['paulm2@dteenergy.com', 'Matt Paul'], dtype=object)]","[array(['gariepyj@dteenergy.com', 'James Gariepy'], dtype=object)
+ array(['paulm2@dteenergy.com', 'Matt Paul'], dtype=object)
+ array(['davism@dteenergy"
+47,privacy,"[array(['mmaddox@cera.com', 'Michael Maddox'], dtype=object)
+ array(['llaidlaw@cera.com', 'Lauren Laidlaw'], dtype=object)
+ array(['dgibbons@cera.com', 'David Gibbons'], dtype=object)
+ array(['llaidlaw@cera.com', 'Lauren Laidlaw'], dtype=object)
+ array(['paugustini@cera.com', 'Peter Augustini'], dtype=object)]","[array(['mmaddox@cera.com', 'Michael Maddox'], dtype=object)
+ array(['llaidlaw@cera.com', 'Lauren Laidlaw'], dtype=object)
+ array(['dgibbons@cera.com', 'David Gibbons"
+48,privacy,"[array(['tthoman@aga.org', 'Theresa Thoman'], dtype=object)
+ array(['tthoman@aga.org', 'Theresa Thoman'], dtype=object)
+ array(['ckazzi@aga.org', 'Catherine Kazzi'], dtype=object)
+ array(['ckazzi@aga.org', 'Catherine Kazzi'], dtype=object)
+ array(['tthoman@aga.org', 'Theresa Thoman'], dtype=object)]","[array(['tthoman@aga.org', 'Theresa Thoman'], dtype=object),
+ array(['ckazzi@aga.org', 'Catherine Kazzi'], dtype=object)]
+
+A:
+
+You can use a list comprehension to filter the array:
+import numpy as np"
+49,privacy,"[array(['steven.luong@bus.utexas.edu', 'Steven Luong'], dtype=object)
+ array(['jason.ware@bus.utexas.edu', 'Jason Ware'], dtype=object)
+ array(['jason.ware@bus.utexas.edu', 'Jason Ware'], dtype=object)
+ array(['brian.jinks@bus.utexas.edu', 'Brian Jinks'], dtype=object)
+ array(['steven.luong@bus.utexas.edu', 'Steven Luong'], dtype=object)]","[array(['jason.ware@bus.utexas.edu', 'Jason Ware'], dtype=object)
+ array(['jason.ware@bus.utexas.edu', 'Jason Ware'], dtype=object"
